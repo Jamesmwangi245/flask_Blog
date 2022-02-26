@@ -13,4 +13,4 @@ app.config.from_pyfile('config.py')
 #initializing Flask extension
 bootstrap = Bootstrap(app)
 
-from app import news
+from apps import news
