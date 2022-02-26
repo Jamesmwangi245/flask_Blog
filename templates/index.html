@@ -1,0 +1,86 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if title %}
+  <title> {{ title }} </title>
+  {% else %}
+  <title> News_News_News </title>
+  {% endif %}
+</head>
+
+<body>
+    <!-- Styles block -->
+
+  {% block styles%}
+  {{ super() }}
+  <link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
+  {% endblock %}
+
+  <!-- Content block -->
+  {% block content %}
+  <div id="nav">
+    <h1>News_News_News</h1>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <a class="nav-link" href="#sources">Home/News Sources</a>
+        <a class="nav-link" href="#articles">Top Articles</a>
+        <a class="nav-link" href="#footer">Contacts</a>
+      </div>
+    </nav>
+
+    <hr>
+
+  </div>
+  <p id="sos">
+    Arranged in alphabetical, order here's a list of news sources from around the world.
+    <br>
+    Click on the link below an item to visit the source website
+  </p>
+  <ol id="sources">
+    {% for sourcez in source %}
+    <li>
+    {{ sourcez.name }}
+    <br>
+    <a href="{{ sourcez.url }}">{{ sourcez.id }}</a>
+    </li>
+    {% endfor %}
+  </ol>
+        <!-- favourite news source  -->
+  <h2> Top news from around the world </h2>
+  <ul id="articles">
+    {% for fav_source in sources %}
+      <!-- <li>{{ fav_source.urlToImage }}</li> -->
+      <!-- <li> -->
+        <img src="{{ fav_source.urlToImage }}" alt="">
+        <br>
+        <p id="info">
+        <a href="{{ fav_source.url }}">{{ fav_source.title }}</a>
+        <br>
+        {{ fav_source.content }}
+        <br>
+        published at {{ fav_source.time|truncate(15) }}
+        </p>
+      <!-- </li> -->
+    {% endfor %}
+  </ul>
+  <hr>
+  <footer id="footer">
+    <h2>Contacts</h2>
+    <div class="foot">
+      <a href="mailto:nelson.odhiambo@student.moringaschool.com">nelson.odhiambo@student.moringaschool.com</a> 
+      <br>
+      <a href="tel:+254-794-023-020">+254-794-023-020</a> 
+      <br>
+      <a href="https://github.com/Nelson014?tab=repositories">Github</a>
+    </div>  
+  </footer>
+  <a id="stick" href="#nav">Back to top</a>
+
+  {% endblock%}
+</body>
+</html>
