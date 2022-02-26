@@ -22,3 +22,10 @@ Python3.8
 Using git, clone it to your local repo from:
 
 https://github.com/Jamesmwangi245/flask_blog.git
+
+
+### Running the App
+Open terminal
+ * $ #!/usr/bin/env python3.8
+ * $ chmod +x run.py
+ * $ ./run.py
