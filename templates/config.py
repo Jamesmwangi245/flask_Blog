@@ -9,7 +9,7 @@ class Config:
   General config parent class
   '''
   NEWS_API_BASE_URL='https://newsapi.org/v2/everything?q={}&sources&from=2022-01-31&sortBy=popularity&apiKey={}'
-  NEW_NEWS='https://newsapi.org/v2/top-headlines/{}?apiKey={}'
+  NEW_BLOGS='https://newsapi.org/v2/top-headlines/{}?apiKey={}'
 
 class ProdConfig(Config):
   '''
