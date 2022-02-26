@@ -27,8 +27,8 @@ https://github.com/Jamesmwangi245/flask_blog.git
 ### Running the App
 Open terminal
  * $ #!/usr/bin/env python3.8
- * $ chmod +x run.py
- * $ ./run.py
+ * $ export FLASK_APP=FLASK-TWO
+ * $ ./ python3 run.py
 
 ## License
 MIT License
