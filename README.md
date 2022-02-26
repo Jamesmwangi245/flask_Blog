@@ -29,3 +29,8 @@ Open terminal
  * $ #!/usr/bin/env python3.8
  * $ chmod +x run.py
  * $ ./run.py
+
+## License
+MIT License
+
+Copyright (c) 2022 [James Kariuki](/LICENSE)
