@@ -17,3 +17,8 @@ Python3.8
 #### Pre-requisites
 * python3.8
 * pip
+
+
+Using git, clone it to your local repo from:
+
+https://github.com/Jamesmwangi245/flask_blog.git
