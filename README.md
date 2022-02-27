@@ -27,10 +27,12 @@ https://github.com/Jamesmwangi245/flask_blog.git
 ### Running the App
 Open terminal
  * $ #!/usr/bin/env python3.8
- * $ export FLASK_APP=FLASK-TWO
+ * $ export FLASK_APP=run.py
  * $ ./ python3 run.py
 
 ## License
 MIT License
 
 Copyright (c) 2022 [James Kariuki](/LICENSE)
+
+4fc66dc1f39848ecab196c4806c87b40

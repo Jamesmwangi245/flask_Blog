@@ -8,8 +8,8 @@ class Config:
   '''
   General config parent class
   '''
-  NEWS_API_BASE_URL='https://newsapi.org/v2/everything?q={}&sources&from=2022-01-31&sortBy=popularity&apiKey={}'
-  NEW_BLOGS='https://newsapi.org/v2/top-headlines/{}?apiKey={}'
+  NEWS_API_BASE_URL='https://newsapi.org/v2/everything?q=bitcoin&apiKey=4fc66dc1f39848ecab196c4806c87b40'
+  NEW_BLOGS='https://newsapi.org/v2/top-headlines?country=us&apiKey=4fc66dc1f39848ecab196c4806c87b40'
 
 class ProdConfig(Config):
   '''

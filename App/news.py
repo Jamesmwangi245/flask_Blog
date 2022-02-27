@@ -1,7 +1,7 @@
 # from os import name
 from flask import render_template
-from app import app
-from .request import Sources, get_articles, get_source
+from App import app
+from .request import  get_articles, get_source,sources
 
 @app.route('/')
 def index():
@@ -13,4 +13,4 @@ def index():
   #get news article
   fav_source=get_articles('sources')
   title='News_Blog'
-  return render_template('index.html',title = title,sources=fav_source,source=Sources)
+  return render_template('index.html',title = title,sources=fav_source,source=sources)
