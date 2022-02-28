@@ -9,7 +9,7 @@ def index():
   Root page function that returns index page and its data
   '''
   # breakpoint()
-  sourcez=get_source('sources')
+  sources=get_source('sources')
   #get news article
   fav_source=get_articles('sources')
   title='News_Blog'
