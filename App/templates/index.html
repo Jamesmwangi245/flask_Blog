@@ -1,5 +1,5 @@
 {% extends 'base.html'%}
-{% import 'narcos.html' as narcos%}
+{% import 'macros.html' as macros%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +42,11 @@
     Click on the link below an item to visit the source website
   </p>
   <ol id="sources">
-    {% for Sources in source %}
+    {% for source in sources %}
     <li>
-    {{ Sources.name }}
+    {{ source.name }}
     <br>
-    <a href="{{ sources.url }}">{{ Sources.id }}</a>
+    <a href="{{ source.url }}">{{ source.id }}</a>
     </li>
     {% endfor %}
   </ol>
