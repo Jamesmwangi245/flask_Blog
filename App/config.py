@@ -15,7 +15,7 @@ class Config:
   NEWS_API_BASE_URL='https://newsapi.org/v2/everything?q=bitcoin&apiKey=4fc66dc1f39848ecab196c4806c87b40'
   NEW_BLOGS='https://newsapi.org/v2/top-headlines?country=us&apiKey=4fc66dc1f39848ecab196c4806c87b40'
   NEWS_API_KEY='4fc66dc1f39848ecab196c4806c87b40'
-  SECRET_KEY='44b585c408e0b7590885483cebd8f6e2'
+  SECRET_KEY='4fc66dc1f39848ecab196c4806c87b40'
 
 class ProdConfig(Config):
   '''
