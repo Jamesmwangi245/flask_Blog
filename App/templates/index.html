@@ -56,7 +56,14 @@
     {% for fav_source in sources %}
       <!-- <li>{{ fav_source.urlToImage }}</li> -->
       <!-- <li> -->
+        <img src="https://exerror.com/wp-content/uploads/2021/10/ImportError-No-module-named-flask.jpg" alt="">
         <img src="{{ fav_source.urlToImage }}" alt="">
+        <p>{{fav_source.url}}</p>
+        <p>{{fav_source.name}}</p>
+        <p>{{fav_source.id}}</p>
+        <p>{{fav_source.author}}</p>
+        <p>{{fav_source.content}}</p>
+
         <br>
         <p id="info">
         <a href="{{ fav_source.url }}">{{ fav_source.title }}</a>
@@ -69,6 +76,51 @@
     {% endfor %}
   </ul>
   <hr>
+  <!-- <div class="container">
+    
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://edition.cnn.com/"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://www1.cbn.com/cbnnews/prayer-link"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="Breaking News, World News and Video from Al Jazeerahttps://www.aljazeera.com"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://www.bbc.co.uk/programmes/b051hg3s"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://www.weatherlink.com/"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://gameforge.com/en-US/littlegames/link-games/"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.726076/full"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://www.ndtv.com/offbeat/video-mysterious-triangle-ufo-spotted-over-islamabad-2784082"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="https://www.ecitizen.go.ke/"></a>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+        <a href="LifestyleLink | Web Software for Active Adult Communitieshttps://lifestylelink.net"></a>
+      </div>
+    </div>
+  </div> -->
   <footer id="footer">
     <h2>Contacts</h2>
     <div class="foot">
